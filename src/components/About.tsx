@@ -14,7 +14,7 @@ const About: React.FC = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="rounded-xl overflow-hidden shadow-xl transform transition-all hover:scale-105 duration-300">
+          <div className="bg-gray-700 dark:bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition-all hover:scale-105 duration-300">
             <img 
               src={profile} 
               alt="Professional portrait" 
