@@ -1,40 +1,55 @@
 import React from 'react';
-import { FileText, Download, Briefcase, GraduationCap } from 'lucide-react';
+import { FileText, Download, Briefcase, GraduationCap, HeartHandshake } from 'lucide-react';
 
 const Resume: React.FC = () => {
   const experiences = [
     {
-      title: 'Senior Frontend Developer',
-      company: 'TechCorp Inc.',
-      period: 'Jan 2021 - Present',
-      description: 'Lead the frontend development team in building scalable web applications. Implemented modern React patterns and optimized performance across multiple projects.'
+      title: 'Software Developer',
+      company: 'Phocas Software',
+      period: 'Feb 2023 - Mar 2025',
+      description: 'Developed the Phocas AI using React, Node.js, and LangChain. Extended the main Phocas application to better integrate the AI, working in C#, .NET, SQL Server, and MongoDB. Enriched the AI\'s context with tool calls that utilise API functions and developed interfaces that allow the AI to interact with the rest of the application.'
     },
     {
-      title: 'Full Stack Developer',
-      company: 'WebSolutions Agency',
-      period: 'Mar 2018 - Dec 2020',
-      description: 'Developed full-stack applications using React, Node.js, and MongoDB. Collaborated with designers to implement responsive UIs and optimize user experiences.'
+      title: 'Graduate Developer',
+      company: 'Phocas Software',
+      period: 'Dec 2021 - Feb 2023',
+      description: 'Developed data pipelines and ETL processes using C#, .NET, and SQL Server. Included extensions to the frontend pages, participating in the migration from Cypress to Playwright tests, and migrating from legacy jQuery to React.'
     },
     {
-      title: 'Junior Web Developer',
-      company: 'Digital Creatives',
-      period: 'Jun 2016 - Feb 2018',
-      description: 'Created responsive websites for clients across various industries. Worked with HTML, CSS, JavaScript, and began specializing in React development.'
+      title: 'Multivariable Methods Tutor ',
+      company: 'University of Canterbury',
+      period: 'Feb 2021 - June 2021',
+      description: 'Tutored Data203: Data Science Multivariable Methods. Aided students in understanding the course material and provided support for assignments and exam preparation. Reported to the course coordinator and provided feedback on student performance.'
     }
   ];
 
   const education = [
     {
-      degree: 'B.S. Computer Science',
-      institution: 'Tech University',
-      period: '2012 - 2016',
-      description: 'Graduated with honors. Specialized in web development and software engineering.'
+      degree: 'Master of Information Technology (AI)',
+      institution: 'University of Melbourne',
+      period: '2023 - 2025',
+      description: 'Included in the Dean\'s Honour List 2024, placing me in the top 5% of masters in my course. Specialized in AI, ML, and Software Project Management.'
     },
     {
-      degree: 'Web Development Bootcamp',
-      institution: 'Coding Academy',
-      period: '2016',
-      description: 'Intensive 12-week program focusing on modern JavaScript frameworks and full stack development.'
+      degree: 'B.S. Science (Computer Science and Data Science)',
+      institution: 'University of Canterbury',
+      period: '2019 - 2021',
+      description: 'Graduated with a double major in three years by overloading subjects. Specialised in data processing and software engineering subjects.'
+    }
+  ];
+
+  const volunteering = [
+    {
+      role: 'BCI Team Lead',
+      organisation: 'MBSI - Project CereCe',
+      period: '2023 - Present',
+      description: 'Leading the brain computer interface (BCI) team in MBSI\'s Project CereCe. The project aims to develop a system that allows users to control a wheelchair using their brain activity.'
+    },
+    {
+      role: 'Full Stack Developer',
+      organisation: 'Air Training Corps No.17 Squadron (Christchurch)',
+      period: '2021',
+      description: 'Collaborated with two other students to develop a lesson management website for the Air Cadet\'s Christchurch squadron.'
     }
   ];
 
@@ -99,7 +114,7 @@ const Resume: React.FC = () => {
               </h3>
             </div>
             
-            <div className="relative border-l-2 border-gray-200 dark:border-gray-700 pl-8 pb-6">
+            <div className="relative border-l-2 border-gray-200 dark:border-gray-700 pl-8 ">
               {education.map((edu, index) => (
                 <div key={index} className={`mb-10 ${index === education.length - 1 ? '' : ''}`}>
                   <div className="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] mt-1.5"></div>
@@ -117,8 +132,34 @@ const Resume: React.FC = () => {
                 </div>
               ))}
             </div>
+
+            <div className="flex items-center mb-8 mt-12">
+              <HeartHandshake size={24} className="text-blue-500 mr-3" />
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                Volunteering
+              </h3>
+            </div>
             
-            <div className="mt-12">
+            <div className="relative border-l-2 border-gray-200 dark:border-gray-700 pl-8 pb-6">
+              {volunteering.map((volun, index) => (
+                <div key={index} className={`mb-10 ${index === education.length - 1 ? '' : ''}`}>
+                  <div className="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] mt-1.5"></div>
+                  <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
+                    {volun.role}
+                  </h4>
+                  <div className="flex items-center mt-1 mb-2">
+                    <span className="text-blue-500 font-medium">{volun.organisation}</span>
+                    <span className="mx-2 text-gray-400">•</span>
+                    <span className="text-gray-500 dark:text-gray-400 text-sm">{volun.period}</span>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-300">
+                    {volun.description}
+                  </p>
+                </div>
+              ))}
+            </div>
+            
+            {/* <div className="mt-12">
               <div className="flex items-center mb-6">
                 <FileText size={24} className="text-blue-500 mr-3" />
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
@@ -146,7 +187,8 @@ const Resume: React.FC = () => {
                   </div>
                 </li>
               </ul>
-            </div>
+            </div> */}
+
           </div>
         </div>
       </div>

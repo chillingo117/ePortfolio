@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowDown, Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { ContactLinks } from './ContactLinks';
 
 const Hero: React.FC = () => {
   const scrollToAbout = () => {
@@ -55,18 +56,7 @@ const Hero: React.FC = () => {
           </div>
           
           <div className="mt-10 flex gap-6 justify-center md:justify-start">
-            <a href="https://github.com/chillingo117" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
-              <Github size={24} />
-              <span className="sr-only">GitHub</span>
-            </a>
-            <a href="https://www.linkedin.com/in/wilchen117" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
-              <Linkedin size={24} />
-              <span className="sr-only">LinkedIn</span>
-            </a>
-            <a href="mailto:kiwitwwilliam@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
-              <Mail size={24} />
-              <span className="sr-only">Email</span>
-            </a>
+            <ContactLinks />
           </div>
         </div>
       </div>

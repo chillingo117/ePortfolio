@@ -28,8 +28,7 @@ const Projects: React.FC = () => {
     { value: 'all', label: 'All Projects' },
     { value: 'frontend', label: 'Frontend' },
     { value: 'backend', label: 'Backend' },
-    { value: 'fullstack', label: 'Full Stack' },
-    { value: 'mobile', label: 'Mobile' }
+    { value: 'fullstack', label: 'Full Stack' }
   ];
 
   return (
@@ -41,7 +40,10 @@ const Projects: React.FC = () => {
           </h2>
           <div className="mt-2 h-1 w-20 bg-blue-500 mx-auto"></div>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            A selection of my recent work across different technologies and domains.
+            A selection of my recent work across different technologies and domains. 
+          </p>
+          <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto opacity-50">
+            (in-development)
           </p>
         </div>
         
