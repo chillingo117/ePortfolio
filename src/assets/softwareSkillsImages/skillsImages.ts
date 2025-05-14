@@ -11,11 +11,13 @@ import pgImg from "./pg.png";
 import js from "./js.png";
 import react from "./react.png";
 import python from "./python.png";
+import nodejs from "./nodejs.png";
 
 export default {
     ts: tsImg,
     js: js,
     react: react,
+    nodejs: nodejs,
     c: cImg,
     net: netImg,
     python: python,

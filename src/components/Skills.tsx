@@ -6,6 +6,7 @@ const Skills: React.FC = () => {
     {name: "TypeScript", image: skillsImages.ts},
     {name: "JavaScript", image: skillsImages.js},
     {name: "React", image: skillsImages.react},
+    {name: "Node.js", image: skillsImages.nodejs},
     {name: "C#", image: skillsImages.c},
     {name: ".NET", image: skillsImages.net},
     {name: "Python", image: skillsImages.python},
@@ -14,7 +15,7 @@ const Skills: React.FC = () => {
     {name: "Lambdas", image: skillsImages.lambda},
     {name: "Axios", image: skillsImages.axios},
     {name: "GraphQL", image: skillsImages.gql},
-    {name: "SQL Server", image: skillsImages.sqlServer},
+    {name: "MS SQL", image: skillsImages.sqlServer},
     {name: "PG SQL", image: skillsImages.pg},
   ];
 
