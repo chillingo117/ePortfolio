@@ -40,10 +40,10 @@ const Skills: React.FC = () => {
             {technologies.map((tech, index) => (
               <div
                 key={index}
-                className="basis-auto justify-items-center text-center px-4 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg text-gray-800 dark:text-gray-200 text-sm font-medium transition-transform"
+                className="basis-auto justify-items-center text-center px-4 py-2 bg-gray-400 dark:bg-gray-700 rounded-lg text-gray-800 dark:text-gray-200 text-sm font-medium transition-transform"
               >
                 <img
-                  className="size-48px object-cover"
+                  className="size-48px object-cover c"
                   src={tech.image}
                   alt={`${tech.name} logo`}
                 />
