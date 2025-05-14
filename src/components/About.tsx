@@ -1,5 +1,6 @@
 import React from 'react';
 import { Award, BookOpen, Briefcase } from 'lucide-react';
+import profile from '../assets/profile.png';
 
 const About: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="rounded-xl overflow-hidden shadow-xl transform transition-all hover:scale-105 duration-300">
             <img 
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" 
+              src={profile} 
               alt="Professional portrait" 
               className="w-full h-auto object-cover"
             />
@@ -27,11 +28,11 @@ const About: React.FC = () => {
             </h3>
             
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-              I'm a passionate full-stack developer with over 5 years of experience building web applications that combine beautiful design with robust functionality. My journey in tech began with a curiosity about how things work and evolved into a career creating solutions that help businesses succeed.
+              I'm a passionate full-stack developer with over 3 years of experience building web applications in technical and interesting domains. My journey in tech began with a curiosity to learn anything and everything, which evolved into a career creating practical applications for complex systems.
             </p>
             
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              What sets me apart is my ability to bridge the gap between technical implementation and user experience. I believe that great software should not only work flawlessly but also be intuitive and enjoyable to use.
+              What sets me apart is my generalist skillset and a passion to learn more, a strong foundation for adapting to any and all software tasks. I thrive in environments that challenge me to think critically and creatively, and I am always looking for opportunities to grow and expand my knowledge.
             </p>
             
             <div className="space-y-4">
@@ -41,7 +42,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-medium text-gray-900 dark:text-white">Professional Experience</h4>
-                  <p className="mt-1 text-gray-600 dark:text-gray-300">5+ years building enterprise-level web applications</p>
+                  <p className="mt-1 text-gray-600 dark:text-gray-300">3+ years building enterprise-level web applications</p>
                 </div>
               </div>
               
@@ -51,7 +52,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-medium text-gray-900 dark:text-white">Education</h4>
-                  <p className="mt-1 text-gray-600 dark:text-gray-300">B.S. in Computer Science from Tech University</p>
+                  <p className="mt-1 text-gray-600 dark:text-gray-300">Master of Information Technology from the University of Melbourne</p>
                 </div>
               </div>
               
@@ -61,7 +62,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-medium text-gray-900 dark:text-white">Achievements</h4>
-                  <p className="mt-1 text-gray-600 dark:text-gray-300">Led development for award-winning applications</p>
+                  <p className="mt-1 text-gray-600 dark:text-gray-300">Top 5% of Masters students in M.I.T. at the University of Melbourne</p>
                 </div>
               </div>
             </div>
