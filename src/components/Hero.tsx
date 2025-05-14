@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, Github, Linkedin, Twitter } from 'lucide-react';
+import { ArrowDown, Github, Linkedin, Mail, Twitter } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const scrollToAbout = () => {
@@ -29,14 +29,14 @@ const Hero: React.FC = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
             <span className="block">Hi, I'm </span>
             <span className="block mt-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-              Your Name
+              William Chen
             </span>
           </h1>
           <p className="mt-6 text-xl sm:text-2xl md:text-3xl max-w-2xl mx-auto md:mx-0 text-gray-600 dark:text-gray-300">
-            Full Stack Developer & UI/UX Designer
+            Full Stack Developer & AI/ML Enthusiast
           </p>
           <p className="mt-6 max-w-2xl text-lg text-gray-500 dark:text-gray-400 mx-auto md:mx-0">
-            Building innovative web applications with a focus on user experience and performance. Passionate about creating solutions that make a difference.
+            3+ years of code development with React, TypeScript, C#, and SQL. Specialised in AI/ML, passionate about creating solutions that make a difference.
           </p>
           
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -55,17 +55,17 @@ const Hero: React.FC = () => {
           </div>
           
           <div className="mt-10 flex gap-6 justify-center md:justify-start">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+            <a href="https://github.com/chillingo117" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
               <Github size={24} />
               <span className="sr-only">GitHub</span>
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+            <a href="https://www.linkedin.com/in/wilchen117" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
               <Linkedin size={24} />
               <span className="sr-only">LinkedIn</span>
             </a>
-            <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
-              <Twitter size={24} />
-              <span className="sr-only">Twitter</span>
+            <a href="mailto:kiwitwwilliam@gmail.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-500 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+              <Mail size={24} />
+              <span className="sr-only">Email</span>
             </a>
           </div>
         </div>

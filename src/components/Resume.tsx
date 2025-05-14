@@ -53,7 +53,7 @@ const Resume: React.FC = () => {
         
         <div className="flex justify-center mb-12">
           <a 
-            href="/resume.pdf" 
+            href="https://docs.google.com/document/d/1RwZUoihw8orlBH1GDHDajuVozFyzdKsF/edit?usp=sharing&ouid=101043576486668661366&rtpof=true&sd=true" 
             download
             className="inline-flex items-center px-6 py-3 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition-all shadow-md hover:shadow-lg"
           >
