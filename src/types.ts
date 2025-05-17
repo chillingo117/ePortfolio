@@ -4,7 +4,7 @@ export interface Project {
   description: string;
   image: string | any;
   tags: string[];
-  category: 'frontend' | 'backend' | 'fullstack' | 'mobile';
-  liveUrl: string;
-  githubUrl: string;
+  liveUrl?: string;
+  liveString?: string;
+  githubUrl?: string;
 }

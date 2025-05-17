@@ -1,40 +1,58 @@
-import React, { useState } from 'react';
-import { ExternalLink, Github } from 'lucide-react';
+import React from 'react';
+import { Github } from 'lucide-react';
 import ProjectCard from './ProjectCard';
 import { Project } from '../types';
-import azulImg from '../assets/azul.png';
+import projectImages from '../assets/projectImages/projectImages';
 
 const Projects: React.FC = () => {
-  const [filter, setFilter] = useState<string>('all');
   
   const projects: Project[] = [
     {
       id: 1,
       title: 'Azul',
       description: 'An exercise in using AI as a code development tool. Created in an afternoon using GitHub Copilot.',
-      image: azulImg,
+      image: projectImages.azul,
       tags: ['React', 'TypeScript', 'AI', 'Copilot'],
-      category: 'frontend',
       liveUrl: 'https://chillingo117.github.io/azul-vibe/',
+      liveString: 'Live Demo',
       githubUrl: 'https://github.com/chillingo117/azul-vibe'
+    },
+    {
+      id: 2,
+      title: 'Azul-Bot',
+      description: 'A C# backend using a Lambda that runs MCTS. Provides an AI player bot service to the Azul project.',
+      image: projectImages.azulBot,
+      tags: ['C#', 'Lambda', 'AWS (in progress)', '.NET 9', 'ML', 'MCTS'],
+      githubUrl: 'https://github.com/chillingo117/azul-bot'
+    },
+    {
+      id: 3,
+      title: 'CereCe',
+      description: 'An MBSI project that uses machine learning to detect motor imagery from a rolling window of electroencephalogram signals. This signal is used to control a wheelchair, allowing freedom of movement for quadraplegic patients.',
+      image: projectImages.cerece,
+      tags: ['Python', 'ML', 'MentaLab', 'Open Source (in progress)'],
+    },
+    {
+      id: 4,
+      title: 'Clinical Reasoning Simulator',
+      description: 'A patient simulator using LangGraph\s structured output. Collaboration between the University of Melbourne and the University of Eastern Finland.',
+      image: projectImages.clinincalReasoning,
+      tags: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'LangGraph', 'Open Source (in progress)'],
+    },
+    {
+      id: 5,
+      title: 'My ePortfolio',
+      description: 'A personal portfolio website. Built with React, TypeScript, and Tailwind CSS. Features CI/CD through Netlify. Initialised using Bolt.new',
+      image: projectImages.ePortfolio,
+      tags: ['TypeScript', 'React', 'Tailwind CSS', 'Netlify'],
+      githubUrl: 'https://github.com/chillingo117/ePortfolio'
     }
-  ];
-  
-  const filteredProjects = filter === 'all' 
-    ? projects 
-    : projects.filter(project => project.category === filter);
-    
-  const categories = [
-    { value: 'all', label: 'All Projects' },
-    { value: 'frontend', label: 'Frontend' },
-    { value: 'backend', label: 'Backend' },
-    { value: 'fullstack', label: 'Full Stack' }
   ];
 
   return (
     <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
             My Projects
           </h2>
@@ -47,24 +65,8 @@ const Projects: React.FC = () => {
           </p>
         </div>
         
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map(category => (
-            <button
-              key={category.value}
-              onClick={() => setFilter(category.value)}
-              className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
-                filter === category.value
-                  ? 'bg-blue-500 text-white shadow-md'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700'
-              }`}
-            >
-              {category.label}
-            </button>
-          ))}
-        </div>
-        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredProjects.map(project => (
+          {projects.map(project => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
