@@ -8,7 +8,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
+    <div className="bg-white dark:bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col h-full">
       <div className="h-48 overflow-hidden">
         <img 
           src={project.image} 
@@ -17,7 +17,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         />
       </div>
       
-      <div className="p-6">
+      <div className="p-6 flex flex-col flex-1">
         <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
           {project.title}
         </h3>
@@ -36,8 +36,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             </span>
           ))}
         </div>
-        
-        <div className="flex justify-between">
+
+        <div className="flex-1" /> {/* Spacer to push links to bottom */}
+
+        <div className="flex justify-between mt-4">
           <a 
             href={project.liveUrl} 
             target="_blank" 
