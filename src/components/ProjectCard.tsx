@@ -40,25 +40,34 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <div className="flex-1" /> {/* Spacer to push links to bottom */}
 
         <div className="flex justify-between mt-4">
-          <a 
-            href={project.liveUrl} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors"
-          >
-            <ExternalLink size={16} className="mr-1" />
-            <span>Live Demo</span>
-          </a>
+          {
+            project.liveUrl ? 
+            <a 
+              href={project.liveUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 font-medium transition-colors"
+            >
+              <ExternalLink size={16} className="mr-1" />
+              <span>Live Demo</span>
+            </a> 
+          : <a/>
+          }
           
-          <a 
-            href={project.githubUrl} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 font-medium transition-colors"
-          >
-            <Github size={16} className="mr-1" />
-            <span>Code</span>
-          </a>
+
+          {
+            project.githubUrl ? 
+              <a 
+                href={project.githubUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 font-medium transition-colors"
+              >
+                <Github size={16} className="mr-1" />
+                <span>Code</span>
+              </a>
+          : <a/>
+          }
         </div>
       </div>
     </div>

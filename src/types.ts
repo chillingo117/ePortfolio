@@ -4,6 +4,7 @@ export interface Project {
   description: string;
   image: string | any;
   tags: string[];
-  liveUrl: string;
-  githubUrl: string;
+  liveUrl?: string;
+  liveString?: string;
+  githubUrl?: string;
 }

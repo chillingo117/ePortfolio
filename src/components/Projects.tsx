@@ -2,8 +2,7 @@ import React from 'react';
 import { Github } from 'lucide-react';
 import ProjectCard from './ProjectCard';
 import { Project } from '../types';
-import azulImg from '../assets/azul.png';
-import azulBotImg from '../assets/azul-bot.png';
+import projectImages from '../assets/projectImages/projectImages';
 
 const Projects: React.FC = () => {
   
@@ -12,19 +11,33 @@ const Projects: React.FC = () => {
       id: 1,
       title: 'Azul',
       description: 'An exercise in using AI as a code development tool. Created in an afternoon using GitHub Copilot.',
-      image: azulImg,
+      image: projectImages.azul,
       tags: ['React', 'TypeScript', 'AI', 'Copilot'],
       liveUrl: 'https://chillingo117.github.io/azul-vibe/',
+      liveString: 'Live Demo',
       githubUrl: 'https://github.com/chillingo117/azul-vibe'
     },
     {
-      id: 1,
+      id: 2,
       title: 'Azul-Bot',
       description: 'A C# backend using a Lambda that runs MCTS. Provides an AI player bot service to the Azul project.',
-      image: azulBotImg,
+      image: projectImages.azulBot,
       tags: ['C#', 'Lambda', 'AWS (in progress)', '.NET 9', 'ML', 'MCTS'],
-      liveUrl: 'https://chillingo117.github.io/azul-vibe/',
-      githubUrl: 'https://github.com/chillingo117/azul-vibe'
+      githubUrl: 'https://github.com/chillingo117/azul-bot'
+    },
+    {
+      id: 3,
+      title: 'CereCe',
+      description: 'An MBSI project that uses machine learning to detect motor imagery from a rolling window of electroencephalogram signals. This signal is used to control a wheelchair, allowing freedom of movement for quadraplegic patients.',
+      image: projectImages.cerece,
+      tags: ['Python', 'ML', 'MentaLab', 'Open Source (in progress)'],
+    },
+    {
+      id: 4,
+      title: 'Clinical Reasoning Simulator',
+      description: 'A patient simulator that does not reveal the possible actions to the user, maintaining a higher level of realism. Achieved using LangGraph\s structured output. Made as a collaboration between the University of Melbourne and the University of Eastern Finland.',
+      image: projectImages.clinincalReasoning,
+      tags: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'LangGraph', 'OpenAI', 'Structured Output', 'Open Source (in progress)'],
     }
   ];
 
