@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowDown, Github, Linkedin, Mail, Twitter } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 import { ContactLinks } from './ContactLinks';
 
 const Hero: React.FC = () => {

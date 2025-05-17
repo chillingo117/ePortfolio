@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           {project.description}
         </p>
         
-        <div className="flex flex-wrap gap-2 mb-6">
+        <div className="flex flex-wrap gap-2 mb-4">
           {project.tags.map((tag, index) => (
             <span 
               key={index} 
@@ -39,7 +39,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
         <div className="flex-1" /> {/* Spacer to push links to bottom */}
 
-        <div className="flex justify-between mt-4">
+        <div className="flex justify-between">
           {
             project.liveUrl ? 
             <a 
@@ -54,20 +54,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           : <a/>
           }
           
-
-          {
-            project.githubUrl ? 
-              <a 
-                href={project.githubUrl} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 font-medium transition-colors"
-              >
-                <Github size={16} className="mr-1" />
-                <span>Code</span>
-              </a>
-          : <a/>
-          }
+          <a 
+            href={project.githubUrl} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-200 font-medium transition-colors"
+          >
+            <Github size={16} className="mr-1" />
+            <span>{project.githubUrl ? 'Code' : 'Private'}</span>
+          </a>
         </div>
       </div>
     </div>

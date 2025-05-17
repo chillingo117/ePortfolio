@@ -35,9 +35,17 @@ const Projects: React.FC = () => {
     {
       id: 4,
       title: 'Clinical Reasoning Simulator',
-      description: 'A patient simulator that does not reveal the possible actions to the user, maintaining a higher level of realism. Achieved using LangGraph\s structured output. Made as a collaboration between the University of Melbourne and the University of Eastern Finland.',
+      description: 'A patient simulator using LangGraph\s structured output. Collaboration between the University of Melbourne and the University of Eastern Finland.',
       image: projectImages.clinincalReasoning,
-      tags: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'LangGraph', 'OpenAI', 'Structured Output', 'Open Source (in progress)'],
+      tags: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'LangGraph', 'Open Source (in progress)'],
+    },
+    {
+      id: 5,
+      title: 'My ePortfolio',
+      description: 'A personal portfolio website. Built with React, TypeScript, and Tailwind CSS. Features CI/CD through Netlify. Initialised using Bolt.new',
+      image: projectImages.ePortfolio,
+      tags: ['TypeScript', 'React', 'Tailwind CSS', 'Netlify'],
+      githubUrl: 'https://github.com/chillingo117/ePortfolio'
     }
   ];
 
