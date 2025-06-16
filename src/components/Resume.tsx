@@ -4,7 +4,7 @@ import { FileText, Download, Briefcase, GraduationCap, HeartHandshake } from 'lu
 const Resume: React.FC = () => {
   const experiences = [
     {
-      title: 'Software Developer',
+      title: 'AI Software Developer',
       company: 'Phocas Software',
       period: 'Feb 2023 - Mar 2025',
       description: 'Developed the Phocas AI using React, Node.js, and LangChain. Extended the main Phocas application to better integrate the AI, working in C#, .NET, SQL Server, and MongoDB. Enriched the AI\'s context with tool calls that utilise API functions and developed interfaces that allow the AI to interact with the rest of the application.'

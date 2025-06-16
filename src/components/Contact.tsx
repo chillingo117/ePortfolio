@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
           </h2>
           <div className="mt-2 h-1 w-20 bg-blue-500 mx-auto"></div>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Have a project in mind or want to discuss an opportunity? I'd love to hear from you.
+            Looking for a developer? I'd love to hear from you.
           </p>
         </div>
         

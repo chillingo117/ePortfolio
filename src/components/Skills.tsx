@@ -17,6 +17,8 @@ const Skills: React.FC = () => {
     {name: "GraphQL", image: skillsImages.gql},
     {name: "MS SQL", image: skillsImages.sqlServer},
     {name: "PG SQL", image: skillsImages.pg},
+    {name: "LangChain", image: skillsImages.chain},
+    {name: "LLMs", image: skillsImages.llm}
   ];
 
   return (
