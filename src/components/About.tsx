@@ -52,7 +52,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-medium text-gray-900 dark:text-white">Education</h4>
-                  <p className="mt-1 text-gray-600 dark:text-gray-300">Master of Information Technology from the University of Melbourne</p>
+                  <p className="mt-1 text-gray-600 dark:text-gray-300">Master of Information Technology, specialising in AI, from the University of Melbourne</p>
                 </div>
               </div>
               
