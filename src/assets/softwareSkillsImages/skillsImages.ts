@@ -12,6 +12,8 @@ import js from "./js.png";
 import react from "./react.png";
 import python from "./python.png";
 import nodejs from "./nodejs.png";
+import chainImg from "./chain.png";
+import llm from "./llm.png";
 
 export default {
     ts: tsImg,
@@ -28,4 +30,6 @@ export default {
     gql: gqlImg,
     sqlServer: sqlServerImg,
     pg: pgImg,
+    chain: chainImg,
+    llm: llm
 }

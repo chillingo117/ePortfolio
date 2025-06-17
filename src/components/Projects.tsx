@@ -22,7 +22,7 @@ const Projects: React.FC = () => {
       title: 'Azul-Bot',
       description: 'A C# backend using a Lambda that runs MCTS. Provides an AI player bot service to the Azul project.',
       image: projectImages.azulBot,
-      tags: ['C#', 'Lambda', 'AWS (in progress)', '.NET 9', 'ML', 'MCTS'],
+      tags: ['C#', 'Lambda', 'AWS (in progress)', '.NET 9', 'Machine Learning', 'MCTS'],
       githubUrl: 'https://github.com/chillingo117/azul-bot'
     },
     {
@@ -30,14 +30,14 @@ const Projects: React.FC = () => {
       title: 'CereCe',
       description: 'An MBSI project that uses machine learning to detect motor imagery from a rolling window of electroencephalogram signals. This signal is used to control a wheelchair, allowing freedom of movement for quadraplegic patients.',
       image: projectImages.cerece,
-      tags: ['Python', 'ML', 'MentaLab', 'Open Source (in progress)'],
+      tags: ['Python', 'Machine Learning', 'MentaLab', 'Open Source (in progress)'],
     },
     {
       id: 4,
       title: 'Clinical Reasoning Simulator',
       description: 'A patient simulator using LangGraph\s structured output. Collaboration between the University of Melbourne and the University of Eastern Finland.',
       image: projectImages.clinincalReasoning,
-      tags: ['JavaScript', 'TypeScript', 'React', 'Node.js', 'LangGraph', 'Open Source (in progress)'],
+      tags: ['TypeScript', 'React', 'Node.js', 'LangGraph', 'Large Language Models', 'Open Source (in progress)'],
     },
     {
       id: 5,
@@ -59,9 +59,6 @@ const Projects: React.FC = () => {
           <div className="mt-2 h-1 w-20 bg-blue-500 mx-auto"></div>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             A selection of my recent work across different technologies and domains. 
-          </p>
-          <p className="mt-4 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto opacity-50">
-            (in-development)
           </p>
         </div>
         

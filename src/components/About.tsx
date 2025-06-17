@@ -28,7 +28,7 @@ const About: React.FC = () => {
             </h3>
             
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-              I'm a passionate full-stack developer with over 3 years of experience building web applications in technical and interesting domains. My journey in tech began with a curiosity to learn anything and everything, which evolved into a career creating practical applications for complex systems.
+              I'm a passionate intermediate level developer with over 3 years of experience building web applications in technical and interesting domains. My journey in tech began with a curiosity to learn anything and everything, which evolved into a career creating practical applications for complex systems.
             </p>
             
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
@@ -52,7 +52,7 @@ const About: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <h4 className="text-lg font-medium text-gray-900 dark:text-white">Education</h4>
-                  <p className="mt-1 text-gray-600 dark:text-gray-300">Master of Information Technology from the University of Melbourne</p>
+                  <p className="mt-1 text-gray-600 dark:text-gray-300">Master of Information Technology, specialising in AI, from the University of Melbourne</p>
                 </div>
               </div>
               

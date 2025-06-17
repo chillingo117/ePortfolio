@@ -18,8 +18,8 @@ const Footer: React.FC = () => {
             <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
               William Chen
             </h2>
-            <p className="mt-2 text-gray-400 max-w-md">
-              Full Stack Developer specialising in AI/ML applications.
+            <p className="mt-2 text-gray-400">
+              Intermediate Software Developer specialising in AI/ML applications.
             </p>
           </div>
           

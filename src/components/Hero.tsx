@@ -34,7 +34,10 @@ const Hero: React.FC = () => {
             </span>
           </h1>
           <p className="mt-6 text-xl sm:text-2xl md:text-3xl max-w-2xl mx-auto md:mx-0 text-gray-600 dark:text-gray-300">
-            Full Stack Developer & AI/ML Enthusiast
+            Intermediate Software Developer 
+          </p>
+          <p className="text-xl sm:text-2xl md:text-3xl max-w-2xl mx-auto md:mx-0 text-gray-600 dark:text-gray-300">
+            + AI/ML Specialist
           </p>
           <p className="mt-6 max-w-2xl text-lg text-gray-500 dark:text-gray-400 mx-auto md:mx-0">
             3+ years of code development with React, TypeScript, C#, and SQL. Specialised in AI/ML, passionate about creating solutions that make a difference.
